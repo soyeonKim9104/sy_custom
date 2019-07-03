@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>css animation</title>
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&display=swap" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="../css/reset.css" />
+	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<div id="custom-wrap">
+	<h1 class="title">css animation</h1>
+	<div class="custom-con">
+		<div class="ani_click_point_1"><i class="icon"></i>click here!</div>
+		<div class="mobile-size">
+			<div class="top">
+				<div class="gnb">
+					<a href="void(0);" onclick="alert('격하게 집에 가고 싶다');return false" class="home"><i class="xi-home-o"></i></a>
+					<span>길찾기</span>
+					<a href="#" class="ham"><i class="xi-bars"></i></a>
+				</div>
+				<div class="search_wrap">
+					<a href="#" class="map_result">
+						<span title="출발" class="start">대한민국 서울</span>
+						<span title="도착지" class="end">안드로메다</span>
+					</a>
+
+					<div class="route_change">
+						<div class="route_text start">
+							<a href="#">내 위치:대한민국 서울</a>
+						</div>
+						<div class="route_text mid">
+							<a href="#">장소 또는 검색</a>
+						</div>
+						<div class="route_text end">
+							<a href="#">갤럭시 안드로메다</a>
+						</div>
+						<a href="#" class="route_icon route_close"><i class="xi-close-thin"></i></a>
+						<a href="#" class="route_icon route_add"><i class="xi-minus-thin"></i></a>
+						<a href="#" class="route_icon route_switch"><i class="xi-compare-arrows"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="traffic_tab" id="traffic_tab">
+				<a href="#" class="cul3 walk on">90광년</a>
+				<a href="#" class="cul3 car">10광년</a>
+				<a href="#" class="cul3 space">60분</a>
+			</div>
+
+			<div class="body">
+				<div class="recom_tab">
+					<a href="#" class="culAuto on">추천 5</a>
+					<a href="#" class="culAuto">걸어서 365</a>
+					<a href="#" class="culAuto">자동차로 10</a>
+					<a href="#" class="culAuto">우주선으로 1</a>
+				</div>
+				<div class="update_wrap">
+					<i class="xi-error"></i>
+					업데이트 5분 초과
+					<a href="#" class="refresh"><i class="xi-refresh"></i><spsan class="blind">새로고침</spsan></a>
+				</div>
+				<div class="tab_list" id="tab_con">
+					<div class="navi_list">
+						<a href="#" class="box">
+							<p class="con_title"><strong><em>60분</em></strong><span><em>2조7천억원</em></span></p>
+							<div class="con_time_bar">
+								<div class="con_time_bar_inner">
+									<span class="walk" style="width:10%;"><em>4분</em></span>
+									<span class="space spot" style="width:80%;"><em>60분</em></span>
+									<span class="walk" style="width:10%;"><em>4분</em></span>
+								</div>
+							</div>
+							<ul class="con_course_info">
+								<li class="space_route">
+									<div class="wrap_li">
+										<div class="li_cell_pub">
+											<strong>아폴로호 11</strong>
+										</div>
+										<div class="li_cell_dsc">
+											<span>대한민국 우주 정거장</span>
+											<span class="real_time">1 정거장 전(약 5분)</span>
+											<span>안드로메다 우주 정거장</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</a>
+
+						<a href="#" class="box">
+							<p class="con_title"><strong><em>85분</em></strong><span><em>2조1천억원</em></span></p>
+							<div class="con_time_bar">
+								<div class="con_time_bar_inner">
+									<span class="walk" style="width:10%;"><em>4분</em></span>
+									<span class="bus spot" style="width:20%;"><em>15분</em></span>
+									<span class="space spot" style="width:65%;"><em>60분</em></span>
+									<span class="walk" style="width:5%;"><em>1분</em></span>
+								</div>
+							</div>
+							<ul class="con_course_info">
+								<li class="bus_route">
+									<div class="wrap_li">
+										<div class="li_cell_pub">
+											<strong>5959</strong>
+										</div>
+										<div class="li_cell_dsc">
+											<span>중문관광로72번길 75</span>
+											<span class="real_time">5 정거장 전(약 15분)</span>
+											<span>안드로메다 우주 정거장</span>
+										</div>
+									</div>
+								</li>
+								<li class="space_route">
+									<div class="wrap_li">
+										<div class="li_cell_pub">
+											<strong>아폴로호 11</strong>
+										</div>
+										<div class="li_cell_dsc">
+											<span>대한민국 우주 정거장</span>
+											<span class="real_time">1 정거장 전(약 5분)</span>
+											<span>안드로메다 우주 정거장</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</a>
+
+						<a href="#" class="box">
+							<p class="con_title"><strong><em>1시간 10분</em></strong><span><em>1조9천억원</em></span></p>
+							<div class="con_time_bar">
+								<div class="con_time_bar_inner">
+									<span class="walk" style="width:10%;"><em>4분</em></span>
+									<span class="space spot" style="width:80%;"><em>60분</em></span>
+									<span class="walk" style="width:10%;"><em>4분</em></span>
+								</div>
+							</div>
+							<ul class="con_course_info">
+								<li class="space_route">
+									<div class="wrap_li">
+										<div class="li_cell_pub">
+											<strong>아폴로호 11</strong>
+										</div>
+										<div class="li_cell_dsc">
+											<span>대한민국 우주 정거장</span>
+											<span class="real_time">1 정거장 전(약 5분)</span>
+											<span>안드로메다 우주 정거장</span>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div><!--mobile-size : E-->
+	</div>
+</div>
+
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/custom.js"></script>
+
+</body>
+</html>

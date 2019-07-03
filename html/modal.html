@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>modal</title>
+	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link type="text/css" rel="stylesheet" href="../css/reset.css" />
+	<link type="text/css" rel="stylesheet" href="../css/style.css" />
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.css" />
+</head>
+<body>
+	<div id="custom-wrap">
+		<h1 class="title">modal</h1>
+		<div class="btn-area button-parrot">
+			<button type="button" class="js-modal-open link-btn" data-target="#modal-1">
+				click modal
+				<div class="parrot"></div>
+				<div class="parrot"></div>
+				<div class="parrot"></div>
+				<div class="parrot"></div>
+				<div class="parrot"></div>
+				<div class="parrot"></div>
+			</button>
+		</div>
+	</div>
+
+	<div class="modal" id="modal-1">
+		<div class="modal-container">
+			<div class="contents">
+				<button type="button" class="js-modal-close close-icon" data-target="#modal-1"><span class="blind">닫기</span></button>
+				<div class="mid">
+					<img src="../images/sysy_ani.gif">
+				</div>
+			</div>
+		</div>
+	</div>
+
+<script src="../js/jquery-1.10.2.min.js"></script>
+<script src="../js/custom.js"></script>
+</body>
+</html>

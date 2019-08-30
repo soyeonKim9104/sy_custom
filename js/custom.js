@@ -13,6 +13,8 @@ var test_sy = function($){
 			common.accordion();
 			common.register();
 			common.cssAni_1();
+			common.fixnav();
+			common.slide_option();
 		},
 		aside : function(){
 			var menu = $(".aside a");
@@ -179,6 +181,48 @@ var test_sy = function($){
 				});
 			}
 			space_tab('#traffic_tab',0);
+		},
+		fixnav:function (e) {
+			function fix_nav(e, nm) {
+				var nm = nm || 0;
+				var navbar = $(e).find('.menu-con');
+				var con = navbar.children();
+				var select = $(navbar).eq(nm);
+				var i = nm;
+
+				console.log(select);
+
+				//select.addClass('active');
+				//con.eq(nm).show();
+
+				navbar.click(function(){
+					if(select!==null){
+						select.removeClass("active");
+						//con.eq(i).hide();
+					}
+					select = $(this);
+					i = $(this).index();
+
+					select.addClass('active');
+					//con.eq(i).show();
+				});
+
+			}
+
+			fix_nav('#fix-navbar',0);
+		},
+		slide_option:function () {
+			var swiper = new Swiper('.slide1, .slide2, .slide3, .slide4', {
+				slidesPerView: 4,
+				spaceBetween: 50,
+				centeredSlides: false,
+				pagination: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+			});
 		}
 	};
 	return common;

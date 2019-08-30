@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>study-switch</title>
+    <link type="text/css" rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poor+Story&display=swap');
+    .sw{  position:relative;
+        height:100vh;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        -webkit-align-items: center;
+        -webkit-flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+    }
+    .sw p{
+        font-family: 'Poor Story', cursive;
+        font-weight: bold;
+        color: #333;
+        font-size: 29px;
+        margin-top: 3vh;
+    }
+
+    .sw img{
+        border: 5px solid #ddd;
+    }
+    .sun{background:#becbcf; }
+    .mon{background:#eba966;}
+    .tue{background:#826a5f;}
+    .wed{background:#ce7870;}
+    .thu{background:#ecbcb0;}
+    .fri{background:#eba966;}
+    .sat{background:#6e7d75;}
+
+</style>
+
+<script>
+/*switch 문*/
+  var msg;
+  var today = new Date();
+  var weekNum = today.getDay(); // 숫자로 요일을 가져옴 0:일,1:월 ...
+  var week = new Array('일','월','화','수','목','금','토');
+  var bg_sel = document.querySelector('body');
+
+  switch (weekNum) {
+      case 0:
+          document.write('<div class="sw"><img src="../img/sw_7.jpg"><p>일욜은 짜파게티 먹는날!</p></div>');
+          bg_sel.classList.add('sun');
+          break;
+      case 1:
+          document.write('<div class="sw"><img src="../img/sw_1.jpg"><p>헬요일 시작이구나</p></div>');
+          bg_sel.classList.add('mon');
+          break;
+      case 2:
+          document.write('<div class="sw"><img src="../img/sw_2.jpg"><p>하아..</p></div>');
+          bg_sel.classList.add('tue');
+          break;
+      case 3:
+          document.write('<div class="sw"><img src="../img/sw_3.jpg"><p>후우...</p></div>');
+          bg_sel.classList.add('wed');
+          break;
+      case 4:
+          document.write('<div class="sw"><img src="../img/sw_4.jpg"><p>후후 좀만 더 내자앙~</p></div>');
+          bg_sel.classList.add('thu');
+          break;
+      case 5:
+          document.write('<div class="sw"><img src="../img/sw_5.jpg"><p>캬아아아아 금요일이다!</p></div>');
+          bg_sel.classList.add('fri');
+          break;
+      case 6:
+          document.write('<div class="sw"><img src="../img/sw_6.jpg"><p>zzzzzzzz 꾸울잠</p></div>');
+          bg_sel.classList.add('sat');
+          break;
+  }
+
+</script>
+</body>
+</html>

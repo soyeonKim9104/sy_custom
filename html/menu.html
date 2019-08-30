@@ -3,7 +3,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>menu</title>
-	<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 	<link type="text/css" rel="stylesheet" href="../css/reset.css" />
 	<link type="text/css" rel="stylesheet" href="../css/style.css" />
 	<link type="text/css" rel="stylesheet" href="../css/bootstrap.css" />
@@ -15,50 +15,71 @@
 		<h1 class="title">menu</h1>
 		<!--<h2 class="sub-title">type1</h2>-->
 
-		<!--accordion : S-->
-		<div class="acc-warp">
-			<ul class="accordion">
-				<li>
-					<a class="acc-toggle" href="javascript:void(0);">depth 1</a>
-					<ul class="inner">
-						<li>cate 1</li>
-						<li>cate 2</li>
-						<li>cate 3</li>
-					</ul>
-				</li>
-				<li>
-					<a class="acc-toggle" href="javascript:void(0);">depth 2</a>
-					<ul class="inner">
-						<li>cate 1</li>
-						<li>cate 2</li>
-						<li>cate 3</li>
-					</ul>
-				</li>
-				<li>
-					<a class="acc-toggle" href="javascript:void(0);">depth 3</a>
-					<ul class="inner">
-						<li>
-							<a href="#" class="acc-toggle">2 depth 1</a>
-							<ul class="inner">
-								<li>cate 1</li>
-								<li>cate 2</li>
-								<li>cate 3</li>
-							</ul>
-						</li>
-						<li>
-							<a href="#" class="acc-toggle">2 depth 2</a>
-							<ul class="inner">
-								<li>cate 1</li>
-								<li>cate 2</li>
-								<li>cate 3</li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-		<!--accordion : E-->
+		<div class="column">
+			<!--accordion : S-->
+			<div class="acc-warp col">
+				<ul class="accordion">
+					<li>
+						<a class="acc-toggle" href="javascript:void(0);">category-1</a>
+						<ul class="inner">
+							<li>top</li>
+							<li>bottom</li>
+							<li>dress</li>
+						</ul>
+					</li>
+					<li>
+						<a class="acc-toggle" href="javascript:void(0);">category-2</a>
+						<ul class="inner">
+							<li>lip</li>
+							<li>face</li>
+							<li>eye</li>
+						</ul>
+					</li>
+					<li>
+						<a class="acc-toggle" href="javascript:void(0);">category-3</a>
+						<ul class="inner">
+							<li class="depth-inner">
+								<a href="#" class="acc-toggle">foods</a>
+								<ul class="inner">
+									<li>snack</li>
+									<li>cheeze</li>
+									<li>milk</li>
+								</ul>
+							</li>
+							<li class="depth-inner">
+								<a href="#" class="acc-toggle">products</a>
+								<ul class="inner">
+									<li>pencil</li>
+									<li>bottle</li>
+									<li>books</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--accordion : E-->
 
+			<!--fixed bar : S-->
+			<div class="fix-navbar col" id="fix-navbar">
+				<nav>
+					<a href="#" class="menu-con-1">
+						<i class="xi-home-o"></i><span>main</span>
+					</a>
+					<a href="#" class="menu-con-2">
+						<i class="xi-star-o"></i><span>search</span>
+					</a>
+					<a href="#" class="menu-con-3">
+						<i class="xi-search"></i><span>pick</span>
+					</a>
+					<a href="#" class="menu-con-4">
+						<i class="xi-user-o"></i><span>mypage</span>
+					</a>
+				</nav>
+			</div>
+			<!--fixed bar : E-->
+
+		</div>
 	</div>
 </body>
 </html>
